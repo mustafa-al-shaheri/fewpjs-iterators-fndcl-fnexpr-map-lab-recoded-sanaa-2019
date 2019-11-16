@@ -12,25 +12,6 @@ let tutorials = [
 ];
 
 
-// const titleCased = function() {
-//   return tutorials.map(function(item){
-//     let array=item.split(" ")
-//     let cap="";
-//     array.map(function(item){
-//       cap+=item[0].toUpperCase()+item.slice(1)+" ";
-//     })
-//     return cap.slice(0,cap.length-1);
-//   })
-// }
-// console.log(titleCased());
-
-// const titleCased =function () {
-//   const tut= tutorials.map(item=>item.split(' ').map(item=>{
-//   return item.charAt(0).toUpperCase() + item.substr(1)}).join(' '));
-//  return tut;
-// }
-
-
 const titleCased=function(){
   const tut=tutorials.map(item=>item.split(" ").map(item=>{
     return item.charAt(0).toUpperCase() + item.substr(1)}).join(' '));
